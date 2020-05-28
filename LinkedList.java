@@ -13,12 +13,12 @@ class Node{
 class LinkedList{
   
   public static Node insert(Node head, int data){
-    if (head == null){
+    if (head == null){          //if LinkedList is empty create head
       head = new Node(data);
       return head;
     }  
 
-    else{
+    else{                       //if LinkedList contains node escape to last node and add data
       Node current = head;
 
       while (current.next != null){
